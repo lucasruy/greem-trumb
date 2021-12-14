@@ -1,0 +1,36 @@
+// THEME
+@import '../theme/default';
+
+// BACKGROUND COLORS
+$bg-color-green-primary: map-get($color-map, site-green-primary);
+$bg-color-green-secondary: map-get($color-map, site-green-secondary);
+$bg-color-white-primary: map-get($color-map, site-white-primary);
+$bg-color-white-secondary: map-get($color-map, site-white-secondary);
+
+// FONT COLORS
+$font-color-grey-primary: map-get($color-map, site-grey-primary);
+$font-color-grey-tertiary: map-get($color-map, site-grey-tertiary);
+$font-color-white-primary: map-get($color-map, site-white-primary);
+$font-color-green-primary: map-get($color-map, site-green-primary);
+$font-color-green-darken: map-get($color-map, site-green-darken);
+
+// ELEMENTS COLORS
+$el-color-grey-primary: map-get($color-map, site-grey-primary);
+$el-color-grey-secondary: map-get($color-map, site-grey-secondary);
+$el-color-grey-tertiary: map-get($color-map, site-grey-tertiary);
+
+// FONT CONFIGS
+$font-family-primary: "Montserrat", sans-serif;
+$font-size-primary: 16px;
+$line-height-primary: 26px;
+
+// Z-INDEX LEVEL
+$z-level-default: 1;
+$z-level-low: 5;
+$z-level-medium: 10;
+$z-level-high: 20;
+
+// MEDIA VALUES
+$small-screen-size: 320px;
+$medium-screen-size: 768px;
+$large-screen-size: 1200px;

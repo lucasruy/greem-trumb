@@ -1,0 +1,37 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+  color: $font-color-grey-primary;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color-green-primary;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,53 @@
+.filters-section {
+  background-color: $bg-color-white-primary;
+  margin: 55px 0;
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: $large-screen-size) {
+    padding: 0 275px;
+    height: 300px;
+    flex-direction: row;
+  }
+
+  > .filter {
+    padding-right: 0;
+    margin-bottom: 50px;
+    
+    > .filterimage > img {
+      width: 75px;
+      margin: 0 auto 10px;
+    }
+
+    > .filterimage.-wide > img {
+      width: 103px;
+      -moz-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      -webkit-transform: scale(1, 1);
+      transform: scale(-1, 1);
+    }
+
+    > .filtername {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: $large-screen-size) {
+      padding-right: 100px;
+      margin-bottom: 0;
+
+      > .filterimage > img {
+        width: 75px;
+        margin: 0 0 10px;
+      }
+  
+      > .filtername {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

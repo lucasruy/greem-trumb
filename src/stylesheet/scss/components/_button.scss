@@ -1,0 +1,17 @@
+.button {
+  border: 1px solid $bg-color-green-primary;
+  color: $bg-color-green-primary;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 15px 28px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 100ms linear;
+
+  &:hover {
+    background-color: $bg-color-green-primary;
+    color: $font-color-white-primary;
+  }
+}

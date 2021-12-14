@@ -1,0 +1,71 @@
+.select {
+  position: relative;
+  font-size: 14px;
+  height: 40px;
+  cursor: pointer;
+
+  &.is-active {
+    > .selected {
+      border-radius: 20px 20px 0 0;
+      border-bottom: 0;
+    }
+
+    > .selected:before {
+      transform: rotate(180deg)
+    }
+
+    > .items {
+      display: block;
+    }
+  }
+
+  > .selected {
+    position: relative;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid $el-color-grey-tertiary;
+    pointer-events: none;
+    transition: border 300ms linear;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 8px;
+      width: 20px;
+      height: 10px;
+      background-image: url('./src/images/icons/select-arrow-down.svg');
+      background-repeat: no-repeat;
+      transition: transform 300ms linear;
+      transform-origin: center;
+    }
+  }
+
+  > .items {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    z-index: $z-level-default;
+    background-color: $bg-color-white-primary;
+    border: 1px solid $el-color-grey-tertiary;
+    border-radius: 0 0 20px 20px;
+    border-top: 0;
+    width: 100%;
+    transition: transform 300ms linear;
+    display: none;
+
+
+    > .option {
+      padding: 8px 18px;
+    }
+
+    > .option:hover {
+      background-color: $bg-color-green-secondary;
+      color: $font-color-white-primary;
+
+      &:last-child {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+}

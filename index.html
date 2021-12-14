@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Greenthumb - Find your next green friend</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/stylesheet/scss/main.scss" />
+    <script src="./src/script/pages/home"></script>
+  </head>
+
+  <body>
+    <section class="hero-section">
+      <picture class="leftleaves">
+        <source
+          srcset="./src/images/hero/mobile/mobile-leaves.png"
+          media="(max-width: 1024px)"
+        />
+        <img
+          src="./src/images/hero/desktop/left-leaves.png"
+          alt="illustration of leaves"
+        />
+      </picture>
+      <picture class="plantperson">
+        <source
+          srcset="./src/images/hero/mobile/mobile-plantperson.png"
+          media="(max-width: 1024px)"
+        />
+        <img
+          src="./src/images/hero/desktop/plantperson.png"
+          alt="illustration of a person with your plants"
+        />
+      </picture>
+      <picture class="rightleaves">
+        <img
+          src="./src/images/hero/desktop/right-leaves.png"
+          alt="illustration of leaves"
+        />
+      </picture>
+      <div class="herocontent">
+        <figure class="greenthumb">
+          <img src="./src/images/icons/logo-white.svg" alt="greenthumb logo" />
+        </figure>
+        <h1 class="herotitle">Find your next green friend</h1>
+        <button type="button" class="nextsection">
+          <figure>
+            <img
+              src="./src/images/icons/arrow-down.svg"
+              alt="arrow down illustration"
+            />
+          </figure>
+        </button>
+      </div>
+    </section>
+
+    <section class="filters-section">
+      <div class="filter">
+        <figure class="filterimage">
+          <img
+            src="./src/images/illustrations/sun.png"
+            alt="sun illustration"
+          />
+        </figure>
+        <p class="filtername">
+          <strong>1.</strong> Set the amount of <strong>sunlight</strong> your
+          plant will get.
+        </p>
+        <div class="select">
+          <div class="selected">Select…</div>
+          <div class="items">
+            <div class="option" data-type="sun" data-value="no">
+              No sunlight
+            </div>
+            <div class="option" data-type="sun" data-value="low">
+              Low sunlight
+            </div>
+            <div class="option" data-type="sun" data-value="high">
+              High sunlight
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+        <figure class="filterimage -wide">
+          <img
+            src="./src/images/illustrations/wateringcan.png"
+            alt="wateringcan illustration"
+          />
+        </figure>
+        <p class="filtername">
+          <strong>2.</strong> How often do you want to
+          <strong>water</strong> your plant?
+        </p>
+        <div class="select">
+          <div class="selected">Select…</div>
+          <div class="items">
+            <div class="option" data-type="water" data-value="rarely">
+              Rarely
+            </div>
+            <div class="option" data-type="water" data-value="regularly">
+              Regularly
+            </div>
+            <div class="option" data-type="water" data-value="daily">Daily</div>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+        <figure class="filterimage">
+          <img
+            src="./src/images/illustrations/dog.png"
+            alt="dog illustration"
+          />
+        </figure>
+        <p class="filtername">
+          <strong>3.</strong> Do you have pets? Do they
+          <strong>chew</strong> plants?
+        </p>
+        <div class="select">
+          <div class="selected">Select…</div>
+          <div class="items">
+            <div class="option" data-type="pets" data-value="false">
+              No/They don’t care
+            </div>
+            <div class="option" data-type="pets" data-value="true">Yes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="notfound -hidden">
+        <div class="textcontent">
+          <h3 class="title">No results yet…</h3>
+          <p class="text">
+            Use the filters above to find the plant that best fits your
+            environment :)
+          </p>
+        </div>
+        <div class="imagecontent">
+          <figure class="notfoundimage">
+            <img
+              src="./src/images/illustrations/no-results.png"
+              alt="no results illustration"
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="results">
+        <figure class="resultsimage">
+          <img
+            src="./src/images/illustrations/pick.png"
+            alt="no results illustration"
+          />
+        </figure>
+        <h3 class="resultstitle">Our picks for you</h3>
+        <div class="showcase">
+          <div class="list"></div>
+        </div>
+        <button type="button" class="button">back to the top</button>
+      </div>
+    </section>
+  </body>
+</html>

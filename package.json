@@ -1,0 +1,17 @@
+{
+  "name": "greenthumb",
+  "version": "1.0.0",
+  "description": "Simple Parcel Sandbox",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "babel-plugin-module-resolver": "4.1.0",
+    "parcel": "1.12.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  }
+}
