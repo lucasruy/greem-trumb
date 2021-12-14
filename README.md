@@ -13,7 +13,7 @@ A partir disso, são reunidos todas as opções selecionadas pelo usuário em um
 todos os items obrigatórios(paramêtros utilizados pela API) são preenchidos, uma `request` é enviada
 para o serviço fornecido.
 
-Após obter essa resposta é construida a grade de produtos que é exibida para o usuário.
+Após obter a resposta, é construído a grade de produtos que é exibida para o usuário.
 
 Em casos que nenhuma resposta é retornada pelo serviço, é exibido uma "tela" de nenhum item encontrado.
 
