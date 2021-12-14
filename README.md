@@ -1,7 +1,6 @@
 # Greenthumb
 ![7vl8z csb app_ (1)](https://user-images.githubusercontent.com/16821577/146054577-2085e3d6-01f2-4d2f-b378-769d6e250f27.png)
 
-
 # Um pouco sobre
 
 O objetivo deste desafio era construir uma aplicação sem uso de frameworks (Ex: React, Angular entre outros) de acordo com um layout responsivo. Para que o projeto funcione como o esperado, existia a necessidade de integrar com uma API que aceita três paramêtros.
@@ -36,7 +35,35 @@ yarn start
 
 - `images`: Local onde as imagens utilizadas no projeto estão armazenadas.
 - `scripts`: Para criar uma estrutura de pasta que considero adequado para tornar uma aplicação escalável, utilizei conhecimento agregado baseado em minha experiência profissional.
+  - `scripts/components`: Para componentes globais, usados em mais de um ponto da aplicação.
+  - `scripts/constants`: Para inclusão de dados estáticos, como variáveis e derivados.
+  - `scripts/features`: Diretório onde ficam as regras de negócio implementadas.
+  - `scripts/pages`: Para páginas, ou local onde existe um agrupamento de `features`.
+  - `scripts/services`: Para inclusão de abstração do consumo/integração a serviços(API's).
 - `stylesheet`: Dentro da pasta onde foi inserido todo o estilo do aplicativo, foi utilizado uma adaptação do padrão SMACSS. Também tentei utilizar o padrão RSCSS em conjunto.
+  - `stylesheet/base`: Para incluir estilos globais e resets.
+  - `stylesheet/components`: Para incluir estilos de componentes globais.
+  - `stylesheet/pages`: Para incluir estilos realicionados a páginas específicas.
+  - `stylesheet/theme`: Para incluir estilos de themas para aplicação.
+  - `stylesheet/variables`: Para incluir todas variáveis utilizadas na aplicação.
+
+```sh
+┣ src
+┣ ┣ images
+┣ ┣ script
+┃ ┃ ┣ components
+┃ ┃ ┣ constants
+┃ ┃ ┣ features
+┃ ┃ ┣ pages
+┃ ┃ ┣ services
+┣ ┣ stylesheet
+┃ ┃ ┣ scss
+┃ ┃ ┃ ┣ base
+┃ ┃ ┃ ┣ components
+┃ ┃ ┃ ┣ pages
+┃ ┃ ┃ ┣ theme
+┃ ┃ ┃ ┣ variables
+```
 
 # Modulos usados no projeto
 
