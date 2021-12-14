@@ -1,7 +1,7 @@
 {
   "name": "greenthumb",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "description": "Te ajuda a buscar sua nova planta de estimação :D",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open"
