@@ -1,4 +1,5 @@
 # Greenthumb
+![7vl8z csb app_ (1)](https://user-images.githubusercontent.com/16821577/146054577-2085e3d6-01f2-4d2f-b378-769d6e250f27.png)
 
 
 # Um pouco sobre
