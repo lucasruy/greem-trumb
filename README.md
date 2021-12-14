@@ -10,8 +10,8 @@ Em casos que nenhuma resposta é retornada pelo serviço, é exibido uma "tela" 
 
 # Tecnologias
 
-- CSS: Utilizado pré-processador SCSS para as folhas de estilo
-- Javascript: Nenhum framework foi utilizado neste projeto, apenas Javascript em sua forma nativa suportada pelo browser.
+- `CSS`: Utilizado pré-processador SCSS para as folhas de estilo
+- `JS`: Nenhum framework foi utilizado neste projeto, apenas Javascript em sua forma nativa suportada pelo browser.
 
 # Estrutura de pastas
 
